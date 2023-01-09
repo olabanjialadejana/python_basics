@@ -19,15 +19,19 @@ student_scores = {
     "ADEGBITE": 66,
 }
 
-student_grades = {}
-for score in student_scores.values():
-    if score > 70:
-        student_grades[score] = "A"
-    elif score > 60:
-        student_grades[score] = "B"
-    elif score > 50:
-        student_grades[score] = "C"
-    elif score > 45:
-        student_grades[score] = "D"
+student_grade = {}
 
-print(student_grades)
+for student in student_scores:
+    score = student_scores[student]
+    if score > 70:
+        student_grade[student] = "A"
+    elif score > 60:
+        student_grade[student] = "B"
+    elif score > 50:
+        student_grade[student] = "C"
+    elif score > 45:
+        student_grade[student] = "D"
+    else:
+        student_grade[student] = "F"
+
+print(student_grade)

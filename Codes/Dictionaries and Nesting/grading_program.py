@@ -11,7 +11,7 @@ student_scores = {
 student_grades = {}
 
 # TODO-2: Write your code below to add the grades to student_grades.
-for score in student_scores.values():
+for score in student_scores:
     if score > 90:
         student_grades[score] = "Outstanding"
     elif score > 80:
