@@ -1,22 +1,16 @@
-femi = {
-    "age": 15,
-    "height": 10,
-}
+femi = {}
+femi["car"] = "toyota"
+femi["fruit"] = "orange"
 
-new_city = input("Enter a new city....")
-val = int(input("Enter the number......"))
-
-
-def add_to_femi(new_city, val):
-    femi[new_city] = val
-    print(femi)
+pair1 = input("enter pair 1\n")
+pair2 = input("enter pair 2\n")
 
 
-add_to_femi(new_city, val)
+def add_to_femi(key, value):
+    femi[key] = value
 
 
-# femi["fat"] = 14
+add_to_femi(pair1, pair2)
 
-# # programming_dictionary["Loop"] = "The action of doing something over and over again."
 
-# print(femi)
+print(femi)

@@ -19,19 +19,10 @@ student_scores = {
     "ADEGBITE": 66,
 }
 
-student_grade = {}
+all_scores = []
+for score in student_scores.values():
+    all_scores.append(score)
 
-for student in student_scores:
-    score = student_scores[student]
-    if score > 70:
-        student_grade[student] = "A"
-    elif score > 60:
-        student_grade[student] = "B"
-    elif score > 50:
-        student_grade[student] = "C"
-    elif score > 45:
-        student_grade[student] = "D"
-    else:
-        student_grade[student] = "F"
+highest = max(all_scores)
 
-print(student_grade)
+print(highest)
