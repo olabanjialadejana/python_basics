@@ -28,6 +28,6 @@ highest_bid = max(all_bids)
 # Get the key corresponding to value highest_bid (** I copied the code. But it somehow worked!! I have to learn how it was done!!!)
 highest_key = list(filter(lambda x: bid[x] == highest_bid, bid))[0]
 
-# This code is contributed by Edula Vinay Kumar Reddy
+# This code is contributed by Edula Vinay Kumar Reddy (i.e. the copied lambda)
 
 print(f'The winner is {highest_key} with a bid of ${highest_bid}')
