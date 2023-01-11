@@ -1,13 +1,10 @@
-# l_name = input("what is your last name?:")
-# f_name = input("what is your first name?:")
+def format_name(f_name, l_name):
+    if f_name == "" or l_name == "":
+        return "Mistake"
+    formated_f_name = f_name.title()
+    formated_l_name = l_name.title()
+    return f'Result: {formated_f_name} {formated_l_name}'
 
 
-def format_name(l_name, f_name):
-    if l_name == "" or f_name == "":
-        return "No valid inputs provided"
-
-    full_name = l_name.title() + ' ' + f_name.title()
-    return f"Your full name is {full_name}"
-
-
-print(format_name(input("what is your first name"), input("what is your last name")))
+print(format_name(input("What is your first name? "),
+      input("What is your last name? ")))
